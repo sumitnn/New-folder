@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <style>
+        .material-icons {
+            color: black;
+        }
+        
+        .mmargin {
+            margin-top: 3rem;
+            margin-bottom: 2.5rem;
+        }
+        
+        .alpine-text {
+            font-size: x-large;
+            line-height: 50px;
+        }
+    </style>
+    <script>
+        $(document).ready(function() {
+            $('.sidenav').sidenav();
+            $('.carousel.carousel-slider').carousel({
+                fullWidth: true,
+                indicators: true,
+
+            });
+            $('.collapsible').collapsible();
+            $('.fixed-action-btn').floatingActionButton();
+            $('.dropdown-trigger').dropdown();
+
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col s12 m3 ">
+
+                <ul id="slide-out" class="sidenav sidenav-fixed">
+                    <li>
+                        <div class="user-view">
+                            <div class="background">
+                                <img src="ap1.jpg" height="100%" width="100%">
+                            </div>
+                            <a href="#user"><img class="circle responsive-img" src="ap1.jpg"></a>
+                            <a href="#name"><span class="white-text name center">Arpit Pandya</span></a>
+
+                        </div>
+                    </li>
+
+                    <li class="center"><span class="orange-text email ">Bscit</span></li>
+                    <li><a href="#!"><i class="material-icons">home</i>Profile</a></li>
+                    <li><a href="#!"><i class="material-icons">home</i>Attendance</a></li>
+                    <li>
+                        <div class="divider"></div>
+                    </li>
+
+                    <li><a class="waves-effect" href="#!"><i class="material-icons">home</i>Fees</a></li>
+                    <li>
+                        <!-- Dropdown Trigger -->
+                        <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Online Course!</a>
+
+                        <!-- Dropdown Structure -->
+                        <ul id='dropdown1' class='dropdown-content'>
+                            <li><a href="#!">one</a></li>
+                            <li><a href="#!">two</a></li>
+                            <li class="divider" tabindex="-1"></li>
+                            <li><a href="#!">three</a></li>
+                            <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
+                            <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="waves-effect" href="#!"><i class="material-icons">home</i>Study</a></li>
+                    <li><a class="waves-effect" href="#!"><i class="material-icons">home</i>Study</a></li>
+                </ul>
+
+
+            </div>
+            <div class="col s12 m8">
+                <!-- Switch -->
+                <div class="switch right-align ">
+                    <label class="black-text">
+      Off
+      <input type="checkbox">
+      <span class="lever"></span>
+      On
+                <nav>
+
+                    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <h1 class="alpine-text center">Alpine Institue Of Technology</h1>
+
+                    </label>
+                </div>
+                </nav>
+                <div class="carousel carousel-slider mmargin">
+                    <a class="carousel-item" href="#one!"><img src="b2.jpg"></a>
+                    <a class="carousel-item" href="#two!"><img src="b2.jpg"></a>
+                    <a class="carousel-item" href="#three!"><img src="b2.jpg"></a>
+                    <a class="carousel-item" href="#four!"><img src="b2.jpg"></a>
+
+                </div>
+                <section class="center mmargin ">
+
+                    <img class="circle responsive-img " src="ap1.jpg" height="200px " width="200px">
+                    <table class="centered highlight responsive-table center">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Year</th>
+                                <th>Course</th>
+                                <th>Mobile Number</th>
+                                <th>Father Name</th>
+                                <th>Mother Name</th>
+
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Alvin</td>
+                                <td>2nd Sem</td>
+                                <td>BscIt</td>
+                                <td>123456789</td>
+
+                                <td>Mrs.Ram</td>
+                                <td>Mrs.Tariyal</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                </section>
+                <hr>
+                <section class="center mmargin ">
+
+                    <h1 class="center-align orange-text">Student Fees Details</h1>
+                    <table class="centered highlight responsive-table center">
+                        <thead>
+                            <tr>
+                                <th>Stuent Name</th>
+                                <th>Student Class</th>
+                                <th>Student Section</th>
+                                <th>Fees Amount</th>
+                                <th>Paid Fee</th>
+                                <th>Balance</th>
+
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Alvin</td>
+                                <td>BscIt </td>
+                                <td>A</td>
+                                <td>1234</td>
+
+                                <td>3000</td>
+                                <td>0</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+
+                </section>
+                <hr/>
+                <section class="center mmargin ">
+                    <ul class="collapsible popout">
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons">filter_drama</i>C language</div>
+                            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos itaque nobis dolor perferendis ut corrupti quae pariatur recusandae hic asperiores.</span></div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons">place</i>C++</div>
+                            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, corrupti..</span></div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons">whatshot</i>HTML</div>
+                            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum eligendi at quidem odit. Natus, aliquam! Quidem, dolor libero. Laudantium dolor sit maiores fuga quis numquam ducimus totam tempora, perspiciatis ut!.</span></div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons">whatshot</i>CSS</div>
+                            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum eligendi at quidem odit. Natus, aliquam! Quidem, dolor libero. Laudantium dolor sit maiores fuga quis numquam ducimus totam tempora, perspiciatis ut!.</span></div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons">whatshot</i>PYTHON</div>
+                            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum eligendi at quidem odit. Natus, aliquam! Quidem, dolor libero. Laudantium dolor sit maiores fuga quis numquam ducimus totam tempora, perspiciatis ut!.</span></div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons">whatshot</i>HTML</div>
+                            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum eligendi at quidem odit. Natus, aliquam! Quidem, dolor libero. Laudantium dolor sit maiores fuga quis numquam ducimus totam tempora, perspiciatis ut!.</span></div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons">whatshot</i>ASP.NET</div>
+                            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum eligendi at quidem odit. Natus, aliquam! Quidem, dolor libero. Laudantium dolor sit maiores fuga quis numquam ducimus totam tempora, perspiciatis ut!.</span></div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons">whatshot</i>JAVA</div>
+                            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum eligendi at quidem odit. Natus, aliquam! Quidem, dolor libero. Laudantium dolor sit maiores fuga quis numquam ducimus totam tempora, perspiciatis ut!.</span></div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons">whatshot</i>C#</div>
+                            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum eligendi at quidem odit. Natus, aliquam! Quidem, dolor libero. Laudantium dolor sit maiores fuga quis numquam ducimus totam tempora, perspiciatis ut!.</span></div>
+                        </li>
+
+
+                    </ul>
+                </section>
+                <div class="fixed-action-btn">
+                    <a class="btn-floating btn-large red">
+                        <i class="large material-icons">mode_edit</i>
+                    </a>
+                    <ul>
+                        <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+                        <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+                        <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+                        <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+                        <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+                    </ul>
+                </div>
+                <section class="center-align mmargin">
+                    <h1 class="blue-text">Online Exam Datesheet</h1>
+
+                    <img src="ap1.jpg" class="responsive-img ">
+                </section>
+
+            </div>
+            <div class="col s12 m1"></div>
+        </div>
+
+</body>
+
+</html>
